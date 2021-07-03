@@ -2,14 +2,10 @@ pipeline {
     agent any
 
     stages {
-        stage('Get from SCM') {
-            steps {
-                echo 'Building..'
-            }
-        }
-		stage('Building') {
+		stage('Executing Batch File') {
             steps {
                 echo 'Testing..'
+				bat 'run.bat'
             }
         }
         stage('Test') {
