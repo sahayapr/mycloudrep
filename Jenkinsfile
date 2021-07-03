@@ -4,7 +4,7 @@ pipeline {
     stages {
 		stage('Executing Batch File') {
             steps {
-                echo 'Testing..tttt'
+                echo 'Executing Batch File'
 				bat 'run.bat'
             }
         }
