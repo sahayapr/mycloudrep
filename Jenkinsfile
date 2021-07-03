@@ -2,9 +2,14 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Get from SCM') {
             steps {
                 echo 'Building..'
+            }
+        }
+		stage('Building') {
+            steps {
+                echo 'Testing..'
             }
         }
         stage('Test') {
